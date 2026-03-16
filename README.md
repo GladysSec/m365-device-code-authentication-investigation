@@ -20,6 +20,7 @@ Observation:
 The authentication activity occurred from multiple locations within minutes.  
 This suggests an impossible travel pattern, which may indicate suspicious authentication activity.
 Sign-in logs showed authentication attempts from different geographic locations in a short period of time.
+
 ![Sign In Logs](screenshots/signin-logs.png)
 [Open full image](screenshots/signin-logs.png)
 
@@ -39,6 +40,7 @@ No suspicious activity or data exfiltration was observed during the investigatio
 |------------|----------------|
 | Suspicious authentication using valid credentials | T1078 – Valid Accounts |
 | Potential abuse of authentication mechanism | T1556 – Modify Authentication Process |
+
 Incident Severity
 
 Medium
