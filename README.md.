@@ -21,7 +21,6 @@ The authentication activity occurred from multiple locations within minutes.
 This suggests an impossible travel pattern, which may indicate suspicious authentication activity.
 Sign-in logs showed authentication attempts from different geographic locations in a short period of time.
 ![Sign In Logs](screenshots/signin-logs.png)
-
 [Open full image](screenshots/signin-logs.png)
 
 User activity after authentication was reviewed to determine whether the account accessed sensitive resources.
