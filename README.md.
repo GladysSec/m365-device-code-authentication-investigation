@@ -1,12 +1,57 @@
 # m365-device-code-authentication-investigation
 SOC investigation of a Device Code Authentication alert in Microsoft 365 Defender
-Field
-Value
-Alert Type
-Device Code Authentication Detected
-User
-tech@creatives.com
-Time Window
-4:33 PM – 4:46 PM
-Locations Observed
-Amsterdam, Hengelo, United States
+## Alert Summary
+
+| Field | Value |
+|------|------|
+| Alert Type | Device Code Authentication Detected |
+| User | tech@creatives.com |
+| Time Window | 4:33 PM – 4:46 PM |
+| Locations Observed | Amsterdam, Hengelo, United States |
+## Investigation Timeline
+
+| Time | Event |
+|------|------|
+| 4:33 PM | Login observed from Amsterdam |
+| 4:35 PM | Login observed from United States |
+| 4:46 PM | Login observed from Hengelo |
+Observation:
+
+The authentication activity occurred from multiple locations within minutes.  
+This suggests an impossible travel pattern, which may indicate suspicious authentication activity.
+Sign-in logs showed authentication attempts from different geographic locations in a short period of time.
+![Sign In Logs](screenshots/signin-logs.png)
+
+[Open full image](screenshots/signin-logs.png)
+
+User activity after authentication was reviewed to determine whether the account accessed sensitive resources.
+
+Checks performed:
+	•	File downloads
+	•	Mailbox rules
+	•	Resource access
+
+Result:
+
+No suspicious activity or data exfiltration was observed during the investigation.
+## MITRE ATT&CK Mapping
+
+| Observation | MITRE Technique |
+|------------|----------------|
+| Suspicious authentication using valid credentials | T1078 – Valid Accounts |
+| Potential abuse of authentication mechanism | T1556 – Modify Authentication Process |
+Incident Severity
+
+Medium
+
+Reason:
+Suspicious authentication pattern detected, but no confirmed malicious activity or data access.
+Recommended Response Actions
+	•	Reset the user password
+	•	Revoke active authentication sessions
+	•	Enforce multi-factor authentication
+	•	Review conditional access policies in Microsoft Entra ID
+Key Takeaways
+	•	Authentication anomalies can signal potential account compromise.
+	•	Reviewing sign-in logs and user activity helps validate whether a threat is real.
+	•	Proper documentation improves incident response workflows.
