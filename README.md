@@ -5,7 +5,7 @@ SOC investigation of a Device Code Authentication alert in Microsoft 365 Defende
 | Field | Value |
 |------|------|
 | Alert Type | Device Code Authentication Detected |
-| User | tech@creatives.com |
+| User | tech@xxxomicrosoft.com |
 | Time Window | 4:33 PM – 4:46 PM |
 | Locations Observed | Amsterdam, Hengelo, United States |
 ## Investigation Timeline
