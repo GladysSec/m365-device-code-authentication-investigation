@@ -41,18 +41,20 @@ No suspicious activity or data exfiltration was observed during the investigatio
 | Suspicious authentication using valid credentials | T1078 – Valid Accounts |
 | Potential abuse of authentication mechanism | T1556 – Modify Authentication Process |
 
-Incident Severity
+## Incident Severity
 
 Medium
 
 Reason:
 Suspicious authentication pattern detected, but no confirmed malicious activity or data access.
-Recommended Response Actions
-	•	Reset the user password
-	•	Revoke active authentication sessions
-	•	Enforce multi-factor authentication
-	•	Review conditional access policies in Microsoft Entra ID
-Key Takeaways
-	•	Authentication anomalies can signal potential account compromise.
-	•	Reviewing sign-in logs and user activity helps validate whether a threat is real.
-	•	Proper documentation improves incident response workflows.
+
+## Recommended Response Actions
+- Reset the user password
+- Revoke active authentication sessions
+- Enforce multi-factor authentication
+- Review conditional access policies in Microsoft Entra ID
+  
+## Key Takeaways & Recommendations
+- Authentication anomalies can signal potential account compromise.
+- Reviewing sign-in logs and user activity helps validate whether a threat is real.
+- Proper documentation improves incident response workflows.
